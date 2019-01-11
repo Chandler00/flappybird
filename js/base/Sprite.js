@@ -1,15 +1,17 @@
 //精灵基类，初始化资源加载 大小 位置
+import {DataStore} from "./DataStore.js";
+
 export class Sprite {
 
-    constructor(ctx = null,
-                img = null,
+    constructor(img = null,
                 srcX = 0,
                 srcY = 0,
                 srcW = 0,
                 srcH = 0,
                 x = 0, y = 0,
                 width = 0, height = 0) {
-        this.ctx = ctx;
+        this.dataStore = DataStore.getInstance();
+        this.ctx = this.dataStore.ctx;
         this.img = img;
         this.srcX = srcX;
         this.srcY = srcY;
@@ -20,18 +22,30 @@ export class Sprite {
         this.width = width;
         this.height = height;
     }
+    static getImage(key){
+        return DataStore.getInstance().res.get(key);
+    }
 
-    draw() {
+
+    draw(img = this.img,
+         srcX = this.srcX,
+         srcY = this.srcY,
+         srcW = this.srcW,
+         srcH = this.srcH,
+         x = this.x,
+         y = this.y,
+         width = this.width,
+         height = this.height) {
         this.ctx.drawImage(
-            this.img,
-            this.srcX,
-            this.srcY,
-            this.srcW,
-            this.srcH,
-            this.x,
-            this.y,
-            this.width,
-            this.height
+            img,
+            srcX,
+            srcY,
+            srcW,
+            srcH,
+            x,
+            y,
+            width,
+            height
         );
     }
 }
