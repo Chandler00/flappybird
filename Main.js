@@ -11,6 +11,7 @@ export class Main {
         this.canvas = document.getElementById('game_canvas');
         this.ctx = this.canvas.getContext('2d');
         this.dataStore = DataStore.getInstance();
+        this.director = Director.getInstance();
         const loader = ResourceLoader.create();
         loader.onloaded(map => this.onResourceFirstLoaded(map));
         //Director.getInstance();
@@ -25,9 +26,12 @@ export class Main {
 
     init() {
         this.dataStore
+            .put('pencils', [])
             .put('background', BackGround)
             .put('land', Land);
-        Director.getInstance().run();
+        //在游戏逻辑之前
+        this.director.createPencil();
+        this.director.run();
 
     }
 
