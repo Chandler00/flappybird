@@ -26,16 +26,37 @@ export class Director {
     }
 
     run() {
-        this.dataStore.get('background').draw();
-        this.dataStore.get('land').draw();
+        if (!this.isGameOver) {
+            this.dataStore.get('background').draw();
 
-        this.dataStore.get('pencils').forEach(function (value) {
-            value.draw();
-        });
+            const pencils = this.dataStore.get('pencils');
 
-        let timer = requestAnimationFrame(() => this.run());
-        //let timer = setInterval(() => this.run(), 1000);
-        this.dataStore.put('timer', timer);
-        //cancelAnimationFrame(this.dataStore.get('timer'));
+            if (pencils[0].x + pencils[0].width <= 0 &&
+                pencils.length === 4) {
+                pencils.shift();
+                pencils.shift();
+            }
+
+            if (pencils[0].x <= (window.innerWidth - pencils[0].width) / 2 &&
+                pencils.length === 2) {
+                this.createPencil();
+            }
+
+            this.dataStore.get('pencils').forEach(function (value) {
+                value.draw();
+            });
+
+            this.dataStore.get('land').draw();
+
+            this.dataStore.get('birds').draw();
+
+            let timer = requestAnimationFrame(() => this.run());
+            //let timer = setInterval(() => this.run(), 1000);
+            this.dataStore.put('timer', timer);
+        } else {
+            cancelAnimationFrame(this.dataStore.get('timer'));
+            this.dataStore.destroy();
+        }
+
     }
 }
