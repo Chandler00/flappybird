@@ -34,10 +34,24 @@ export class Main {
             .put('background', BackGround)
             .put('land', Land)
             .put('birds', Birds);
+        this.registerEvent();
         //在游戏逻辑之前
         this.director.createPencil();
         this.director.run();
 
+    }
+
+    registerEvent() {
+        this.canvas.addEventListener('touchstart', e => {
+            //事件冒泡屏蔽，事件冒泡是指先触发机制由内而外
+            e.preventDefault();
+            if (this.director.isGameOver) {
+                console.log('Game start')
+                this.init();
+            } else {
+                this.director.birdsEvent();
+            }
+        });
     }
 
 }

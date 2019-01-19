@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91fc29ae-0898-4648-97e3-50ca6d200ee4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Director.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Director.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/player/Birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/player/Birds.js" afterDir="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Director.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+            <state relative-caret-position="216">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="44" />
               <folding>
                 <element signature="e#9#55#0" expanded="true" />
               </folding>
@@ -31,15 +30,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/birds.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/js/base/DataStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="369">
+              <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+              <folding>
+                <element signature="e#23#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/player/Birds.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -86,9 +92,9 @@
         <option value="$PROJECT_DIR$/js/runtime/UpPencil.js" />
         <option value="$PROJECT_DIR$/js/runtime/Land.js" />
         <option value="$PROJECT_DIR$/js/runtime/Pencil.js" />
+        <option value="$PROJECT_DIR$/js/player/Birds.js" />
         <option value="$PROJECT_DIR$/Main.js" />
         <option value="$PROJECT_DIR$/js/Director.js" />
-        <option value="$PROJECT_DIR$/js/player/Birds.js" />
       </list>
     </option>
   </component>
@@ -212,7 +218,7 @@
       <workItem from="1547339273766" duration="4814000" />
       <workItem from="1547520008943" duration="3095000" />
       <workItem from="1547774489622" duration="48000" />
-      <workItem from="1547918964157" duration="2123000" />
+      <workItem from="1547918964157" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="data store created">
       <created>1546484715138</created>
@@ -232,7 +238,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49844000" />
+    <option name="totallyTimeSpent" value="54198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/base/DataStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/base/Sprite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -415,30 +414,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/birds.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="369">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding>
+            <element signature="e#23#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Director.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        <state relative-caret-position="216">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="44" />
           <folding>
             <element signature="e#9#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/birds.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/js/base/DataStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/player/Birds.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
         </state>
       </provider>
     </entry>
