@@ -9,7 +9,7 @@ export class BackGround extends Sprite {
             image.width, image.height,
             0, 0,
             window.innerWidth, window.innerHeight);
-        console.log(image.width, image.height, window.innerWidth, window.innerHeight);
+        //console.log(image.width, image.height, window.innerWidth, window.innerHeight);
     }
 
 }
