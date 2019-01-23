@@ -5,7 +5,7 @@ import {Director} from "../Director.js";
 export class Land extends Sprite {
 
     constructor() {
-        const image = Sprite.getImage('land')
+        const image = Sprite.getImage('land');
         super(image, 0, 0,
             image.width, image.height,
             0, window.innerHeight - image.height,
